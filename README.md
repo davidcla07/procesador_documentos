@@ -71,7 +71,7 @@ with open('documento.jpg', 'rb') as f:  # También funciona con .pdf
     file_content = base64.b64encode(f.read()).decode('utf-8')
 
 # URL de tu Cloud Function
-url = "https://us-central1-pruebadavinchi.cloudfunctions.net/process-document"
+url = ""
 
 # Enviar solicitud
 response = requests.post(url, json={
